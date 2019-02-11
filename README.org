@@ -1,0 +1,23 @@
+#+TITLE: InferSent Mirror with setup.py
+
+InferSent is not providing packaging, thus user need to download the
+code and put into sys.path.
+
+This repo simply add that for my own use. You can install it by:
+
+#+BEGIN_EXAMPLE
+pip install --user git+https://github.com/lihebi/InferSent
+#+END_EXAMPLE
+
+or locally:
+
+#+BEGIN_EXAMPLE
+python3 setup.py install --user
+#+END_EXAMPLE
+
+The model can be imported like this:
+
+#+BEGIN_SRC py
+from infersent.models import InferSent
+#+END_SRC
+
